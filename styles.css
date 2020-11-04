@@ -24,10 +24,61 @@ img {
     max-width: 100%;
 }
 /*Utilities*/
+.container {
+    max-width: 125rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
 /*Header & Nav*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav {
+    height: 10rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 5rem;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: opacity .3s;
+    /* color: white; */
+}
+
+.nav-link:hover {
+    opacity: .6;
+}
+
+.logo {
+    display: block;
+    width: 8rem;
+}
 
 /*Main content*/
+section {
+    display: none;
+}
 
 /*Animations*/
 
