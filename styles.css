@@ -307,3 +307,26 @@ header {
     }    
 }
 
+@media screen and (max-width: 700px){
+    .nav {
+        flex-direction: column;
+        height: 5rem;
+    }
+
+    .logo-box {
+        margin: 2rem 0;
+    }
+
+    .nav-item {
+        margin-right: 2.5rem;
+    }
+
+    .blob-2 {
+        display: none;
+    }
+
+    .blob-3 {
+        width: 50%;
+        bottom: -10rem;
+    }
+}
