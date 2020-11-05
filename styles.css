@@ -63,7 +63,7 @@ header {
     font-size: 1.2rem;
     text-transform: uppercase;
     transition: opacity .3s;
-    /* color: white; */
+    color: white;
 }
 
 .nav-link:hover {
@@ -76,9 +76,140 @@ header {
 }
 
 /*Main content*/
-section {
-    display: none;
+
+.landing-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #3b4679, #2b3153);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
 }
+
+.landing-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100vh;
+    background-image: url("./images/bg-pat.png");
+    background-size: cover;
+    opacity: .4;
+    z-index: -1;
+}
+
+.content {
+    display: grid;   
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.content-details {
+    max-width: 80%;
+}
+
+.title {
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    color: #929fc5;
+    margin-bottom: 2.5rem;
+}
+
+.search {
+    margin-bottom: 2.5rem;
+}
+
+.search input {
+    border: none;
+    border-radius: 5rem;
+    padding: 2rem;
+    outline: none;
+}
+
+.search-bar {
+    width: calc(100% - .5rem);
+}
+
+.search-btn {
+    width: 10rem;
+    background-image: linear-gradient(to right, #ff83d5, #ffccb0);
+    color: white;
+    cursor: pointer;
+    margin-left: -10rem;
+}
+
+.search-btn:hover {
+    background-image: linear-gradient(to left, #ff83d5, #ffccb0);
+}
+
+.sm-list {
+    display: flex;
+}
+
+.sm-link {
+    color: #929fc5;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #929fc5;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 2.5rem;
+}
+
+.sm-link i {
+    margin: auto;
+}
+
+.sm-link:hover {
+    background-image: linear-gradient(to right, #a971ff, #00f0ff);
+    color: white;
+}
+
+.image-group {
+    text-align: center;
+    position: relative;
+}
+
+.blob-bean {
+    position: absolute;
+    top: 2.5rem;
+    left: -1rem;
+    z-index: 10;
+}
+
+.blob {
+    position: absolute;
+    z-index: -1;
+}
+
+.blob-1 {
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blob-2 {
+    top: 15rem;
+    left: -17rem;
+}
+
+.blob-3 {
+    right: 5rem;
+    bottom: -24rem;
+}
+
+.blob-4 {
+    left: -21rem;
+    bottom: -17rem;
+}
+
 
 /*Animations*/
 
