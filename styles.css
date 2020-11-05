@@ -30,6 +30,10 @@ img {
     padding: 0 1.5rem;
 }
 
+.hue-shift {
+    animation: hue-shift 5s infinite alternate;
+}
+
 /*Header & Nav*/
 header {
     position: absolute;
@@ -232,6 +236,15 @@ header {
     }
     to {
         transform: translateY(-2rem);
+    }
+}
+
+@keyframes hue-shift {
+    from {
+        filter: hue-rotate(0);
+    }
+    to {
+        filter: hue-rotate(360deg);
     }
 }
 
